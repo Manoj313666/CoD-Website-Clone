@@ -1,0 +1,1118 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  
+  
+}
+body{
+  background-color: #1b1b1b;
+  overflow-x: hidden;
+}
+/*NAVBAR*/
+.navMargin{
+  padding: 0px 64px;
+  padding-top: 24px;
+  background-image: url(./assets/images/Hero\ Char2.png);
+  height: 720px;
+  background-position: center;
+  background-size: cover;
+}
+.navbarContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 8px;
+  position: sticky;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.227); 
+  backdrop-filter: blur(10px);         
+  -webkit-backdrop-filter: blur(10px);
+  top: 0;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 30px;
+  
+}
+
+.hamburger{
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
+}
+
+.links{
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.links a{
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  color: white;
+  font-size: 16px;
+  padding: 12px 12px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.links a:hover{
+  background-color: rgba(0, 0, 0, 0.388);
+  
+}
+
+.leftAlgin{
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.navButtons{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: transparent;
+  
+}
+
+.authBtn{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.loginBtn{
+  border: none;
+  color: white;
+  background: transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.navCTA {
+  position: relative;
+  display: inline-block;
+}
+
+.navCTA button{
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 4px 16px;
+  background-color: #F96800;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  z-index: 2;
+  overflow: hidden
+}
+
+.navCTA::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border: 2px solid #F96800;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.navCTA:hover::after {
+  opacity: 1;
+}
+
+
+/*HEROSECTION*/
+.textContents{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 8px;
+  
+}
+
+.textContents h1{
+  font-size: 136px;
+  font-family: 'Anton';
+  line-height: 144px;
+  letter-spacing: 4px;
+  color: white;
+}
+
+.textContents p{
+  width: 396px;
+  font-size: 28px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: white;
+  
+}
+
+.secCTA{
+  border: 1px solid rgba(255, 255, 255, 0.423);
+  border-radius: 2px;
+  font-size: 16px;
+  font-family: 'Oswald';
+  font-weight: 600;
+  color: white;
+  background-color: rgba(46, 46, 46, 0.603); 
+  backdrop-filter: blur(10px);         
+  -webkit-backdrop-filter: blur(10px);
+  padding: 12px 16px;
+  width: 25%;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.secCTA:hover{
+  background-color: rgba(79, 79, 79, 0.603);
+}
+
+.hero {
+  display: flex;
+  align-items: center;      
+  height: 100%;             
+  text-align: left;       
+}
+
+
+/*XBOX SECTION*/
+.xboxCont{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 156px;
+}
+
+.xboxCont p{
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: 400;
+}
+
+.xboxButton{
+  border: none;
+  background-color: #107C10;
+  font-size: 16px;
+  color: white;
+  padding: 12px 40px;
+  border-radius: 2px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;;
+}
+
+.xboxButton:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35); 
+  transform: translateY(-2px);
+}
+
+
+/*CARDS & ARTICLES*/
+
+.topCard{
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-image: url(./assets/images/Card1.png);
+  background-size: cover;
+  background-position: center;
+  padding: 24px 24px;
+  z-index: 1;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.466);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.topCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/images/Card1.png);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s ease;
+  z-index: 0;
+}
+
+.topCard:hover::before {
+  transform: scale(1.1);
+}
+
+.topCard > * {
+  position: relative;
+  z-index: 1;
+}
+
+.cardTitle{
+  color: white;
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+}
+.topCard p{
+  font-size: 18px;
+  color: #c7c7c7;
+  font-weight: 400;
+  width: 60%;
+}
+.cLogo1{
+  height: 14px;
+  margin-bottom: 8px;
+}
+
+.cardBtn{
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  margin-top: 12px;
+  cursor: pointer;
+  z-index: 1;
+  text-align: center;
+}
+
+/*Card1*/
+.btmCard1{
+  position: relative;
+  width: 100%;
+  height: 344px;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-image: url(./assets/images/Card2.png);
+  background-size: cover;
+  background-position: center;
+  padding: 24px 24px;
+  z-index: 1;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.466);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btmCard1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/images/Card2.png);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s ease;
+  z-index: 0;
+}
+
+.btmCard1:hover::before {
+  transform: scale(1.1);
+}
+
+.btmCard1 > * {
+  position: relative;
+  z-index: 1;
+}
+
+/*Card2*/
+.btmCard2{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-image: url(./assets/images/Hero\ Char2.png);
+  background-size: cover;
+  background-position: center;
+  padding: 24px 24px;
+  z-index: 1;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.466);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btmCard2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/images/Hero\ Char2.png);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s ease;
+  z-index: 0;
+}
+
+.btmCard2:hover::before {
+  transform: scale(1.1);
+}
+
+.btmCard2 > * {
+  position: relative;
+  z-index: 1;
+}
+
+/*Bottom Cards*/
+.btmCarrContainer{
+  display: flex;
+  gap: 40px;
+  width: 100%;
+
+  
+
+}
+
+.leftCards{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+
+/*NEWS ARTICLE SECTION*/
+.titleEffect{
+  font-size: 56px;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.img{
+  width: 372px;
+  height: 256px;
+  background-image: url(./assets/images/news.png);
+  background-size: cover;
+  background-position: top;
+  border: 1px solid rgba(255, 255, 255, 0.33);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mainNews h2{
+  font-family: 'Oswald', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.tagAndDate a, .tagAndDate2 a{
+  text-decoration: none;
+  color: black;
+  padding: 4px 4px;
+  font-size: 12px;
+  font-family: 'Oswald', sans-serif;
+  background-color: #9C978F;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.tagAndDate a:hover, .tagAndDate2 a:hover{
+  background-color: #636262;
+}
+
+.tagAndDate p{
+  font-size: 12px;
+  font-family: 'Oswald', sans-serif;
+  color: #9C978F;
+}
+
+.tagAndDate{
+  display: flex;
+  justify-content: space-between;
+  width: 372px;
+  align-items: center;
+}
+
+/*MINI CARDS*/
+.miniImg{
+  width: 100%;
+  height: 94px;
+  background-image: url(./assets/images/Card2.png);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+
+}
+
+.miniContents p{
+  font-size: 18px;
+  width: 200px;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-weight: 300;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.tagAndDate2 p{
+  font-size: 12px;
+  font-family: 'Oswald', sans-serif;
+  color: #9C978F;
+}
+
+.tagAndDate2{
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.miniCards{
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #9c978f62;
+  width: 372px;
+  
+}
+
+.secButton{
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+  border: 1px solid #9c978fb1;
+  padding: 12px 20px;
+  background: transparent;
+  color: white;
+  margin-top: 40px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.secButton:hover{
+  background:  #656462b1;
+}
+
+.rightSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 372px;
+}
+.news{
+  width: 372px;
+  padding-right: 64px;
+}
+
+/*WHOLE NEWS & ARTICLE SECTION*/
+.cardsAndArticles{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0px 64px;
+  padding-top: 12px;
+}
+
+/*GAMES SECTION*/
+.imgContainer{
+  background-image: url(./assets/images/news.png);
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 344px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+
+}
+.imgContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/images/news.png);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s ease;
+  z-index: 0;
+}
+
+.imgContainer:hover::before {
+  transform: scale(1.1);
+}
+
+.imgContainer > * {
+  position: relative;
+  z-index: 1;
+}
+
+.offerBar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #006603;
+  padding: 2px;
+  width: auto;
+  z-index: 2;
+}
+.offerBar p{
+  font-size: 14px;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+.offerBar1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #24272A;
+  padding: 2px;
+  width: auto;
+  z-index: 2;
+}
+.offerBar1 p{
+  font-size: 14px;
+  font-family: 'Oswald', sans-serif;
+  color: #24272A;
+
+}
+
+.gcTextContents p{
+  font-size: 16px;
+  color: #C2C7CB;
+}
+.gcTextContents h2{
+  font-size: 20px;
+  color: #C2C7CB;
+}
+
+.platforms{
+  height: 16px;
+  width: 16px;
+}
+
+.game1, .game2, .game3, .game4{
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  width: 100%;
+  height: 496px;
+  overflow: hidden;
+  background-color: #24272A;
+  border: 1px solid #9c978f49;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.64);
+  cursor: pointer;
+}
+
+.gcTextContents{
+  padding: 8px 16px;
+  padding-bottom: 24px;
+}
+
+.gamesTitle{
+  padding-top: 44px;
+  margin: 0px 64px;
+  border-bottom: 1px solid #9c978f49;
+}
+
+.imgContainer1{
+  background-image: url(./assets/images/MWIII.png);
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 344px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+
+}
+.imgContainer1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/images/MWIII.png);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s ease;
+  z-index: 0;
+}
+
+.imgContainer1:hover::before {
+  transform: scale(1.1);
+}
+
+.imgContainer1 > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+.imgContainer2{
+  background-image: url(./assets/images/Warzone.png);
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 344px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+
+}
+.imgContainer2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/images/Warzone.png);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s ease;
+  z-index: 0;
+}
+
+.imgContainer2:hover::before {
+  transform: scale(1.1);
+}
+
+.imgContainer2 > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+.imgContainer3{
+  background-image: url(./assets/images/CoDM.png);
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 344px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+
+}
+.imgContainer3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/images/CoDM.png);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s ease;
+  z-index: 0;
+}
+
+.imgContainer3:hover::before {
+  transform: scale(1.1);
+}
+
+.imgContainer3 > * {
+  position: relative;
+  z-index: 1;
+}
+/*WHOLE GAMES CONTAINER*/
+.wholeGameContainer{
+  display: flex;
+  margin-top: 24px;
+  align-items: center;
+  gap: 40px;
+  padding: 0px 64px;
+}
+
+/*BOTTOM LINES*/
+.line1 p, .line2 p{
+  font-size: 12px;
+  font-family: 'Oswald', sans-serif;
+  line-height: 8px;
+  color: #C2C7CB;
+  font-weight: 300;
+}
+
+.bottomContents{
+  padding: 20px 64px;
+}
+
+.bottomLine{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #9c978f49;
+}
+
+.line2{
+  padding-top: 64px;
+}
+
+footer{
+  background-color: #000000;
+  padding: 0px 64px;
+}
+
+.legal{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+  gap: 24px;
+  border-bottom: 1px solid #6362627e;;
+}
+
+.legalBtns{
+  text-decoration: none;
+  color: #C2C7CB;
+  font-weight: 300;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.ftLogo{
+  height: 116px;
+  cursor: pointer;
+}
+
+.footerLogo{
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid #6362627e;
+}
+
+.btmP p{
+  font-size: 14px;
+  font-family: 'Oswald', sans-serif;
+  color: #C2C7CB;
+  font-weight: 300;
+  padding: 34px 0px;
+  text-align: center;
+  width: 60%;
+}
+
+.btmP{
+  justify-content: center;
+  display: flex;
+  padding-bottom: 72px;
+}
+
+
+
+/*MOBILE VIEW*/
+@media (max-width: 768px) {
+  .links {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.658); 
+    backdrop-filter: blur(10px);         
+    -webkit-backdrop-filter: blur(10px);
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    z-index: 999;
+  }
+
+  .links.show {
+    display: flex;
+  }
+
+  .links a:hover{
+    background-color: rgba(103, 102, 102, 0.388);
+    
+  }
+
+  .hamburger {
+    cursor: pointer;
+  }
+  .authBtn{
+    display: none;
+  }
+  .navMargin {
+    padding: 16px 16px;
+    height: auto;
+    background-position: top;
+  }
+
+  .navbarContainer {
+    display: flex; /* Just in case */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+  }
+  
+
+  .leftAlgin {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    align-items: center;
+  }
+  
+  .navLogo{
+    height: 20px;
+  }
+
+  .logo {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .textContents{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    gap: 8px;
+    
+  }
+  
+  .textContents h1{
+    font-size: 80px;
+    font-family: 'Anton';
+    line-height: 78px;
+    color: white;
+  }
+  
+  .textContents p{
+    width: 396px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    color: white;
+    
+  }
+  
+  .secCTA{
+    border: 1px solid rgba(255, 255, 255, 0.423);
+    border-radius: 2px;
+    font-size: 16px;
+    font-family: 'Oswald';
+    font-weight: 400;
+    color: white;
+    background-color: rgba(46, 46, 46, 0.603); 
+    backdrop-filter: blur(10px);         
+    -webkit-backdrop-filter: blur(10px);
+    padding: 8px 12px;
+    width: 220px;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .secCTA:hover{
+    background-color: rgba(79, 79, 79, 0.603);
+  }
+  
+  .hero {
+    display: flex;
+    align-items: flex-end;      
+    height: 640px;             
+    text-align: left;       
+  }
+  
+  .xboxCont {
+    flex-direction: column;
+    padding: 24px;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .btmCard1, .topCard, .btmCard2{
+    position: relative;
+    width: 100%;
+    height: 456px;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: url(./assets/images/Card2.png);
+    background-size: cover;
+    background-position: center;
+    padding: 24px 24px;
+    z-index: 1;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.466);
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  
+  .cardTitle{
+    color: white;
+    font-size: 24px;
+  }
+  .topCard p{
+    font-size: 14px;
+    color: #c7c7c7;
+    font-weight: 400;
+    width: 100%;
+  }
+  .cLogo1{
+    height: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .cardBtn{
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-top: 12px;
+    cursor: pointer;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .cardsAndArticles {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .tagAndDate2 p{
+    font-family: 'Oswald', sans-serif;
+    color: #9C978F;
+  }
+  
+  .news, .rightSection {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .mainNews .img, .miniCards {
+    width: 100%;
+  }
+
+  .miniImg{
+    width: 100%;
+    height: 94px;
+    background-image: url(./assets/images/Card2.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  
+  }
+  
+  .miniContents p{
+    font-size: 16px;
+    width: 200px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+
+  .btmCarrContainer {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .imgContainer, .imgContainer1, .imgContainer2, .imgContainer3{
+    background-image: url(./assets/images/news.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 156px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+  
+  }
+
+  .game1, .game2, .game3, .game4{
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    width: calc(50% - 12px);
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    background-color: #24272A;
+    border: 1px solid #9c978f49;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.64);
+    cursor: pointer;
+  }
+  .gcTextContents h2{
+    font-size: 18px;
+  }
+  .wholeGameContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row; /* Change this */
+    gap: 24px;
+    padding: 0 24px;
+  }
+  
+  .tagAndDate{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  .gamesTitle {
+    margin: 0 24px;
+  }
+
+  .bottomContents {
+    padding: 24px;
+  }
+
+  .btmP p {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  footer {
+    padding: 24px;
+  }
+
+  .legal {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .footerLogo {
+    align-items: center;
+  }
+
+}
